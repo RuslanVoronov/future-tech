@@ -1,0 +1,23 @@
+node_modules/
+npm-debug.log
+yarn-error.log
+.yarn-integrity
+dist/
+build/
+coverage/
+
+# Временные и системные файлы ОС
+.DS_Store
+Thumbs.db
+.directory
+
+# Локальные конфиги и секреты (не храните токены и пароли в репозитории)
+.env
+*.key
+*.pem
+secrets.json
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.bak
