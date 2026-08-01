@@ -14,6 +14,8 @@
     --color-accent: #ffd11a;
     --color-red: #FF5500;
 
+    --border: #{rem(1)} solid var(--color-dark-15);
+
     --font-family-base: 'Inter', sans-serif;
     --font-family-accent: 'KumbhSans', sans-serif;
     --container-width: #{rem(1600)};

@@ -4,7 +4,8 @@
 @use 'utils';
 @use 'globals';
 
-body {
-    font-family: 'KumbhSans';
-    font-weight: 700;
-}
+@use 'blocks/icon.scss';
+@use 'blocks/logo.scss';
+@use 'blocks/button.scss';
+@use 'blocks/burger-button.scss';
+@use 'blocks/header.scss';
