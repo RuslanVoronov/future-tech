@@ -9,3 +9,12 @@
 @use 'blocks/button.scss';
 @use 'blocks/burger-button.scss';
 @use 'blocks/header.scss';
+
+@use 'blocks/badge';
+@use 'blocks/soc1als';
+@use 'blocks/footer';
+
+
+.header {
+    display: none !important;
+}
