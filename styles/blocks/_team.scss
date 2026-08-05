@@ -7,6 +7,11 @@
     border-color: var(--color-dark-10);
     border-radius: rem(100);
 
+    @include laptop {
+        padding: rem(8);
+        --personeImageSize: #{rem(50)};
+    }
+
     &__person {
         width: var(--personeImageSize);
         background-color: var(--color-dark-15);
@@ -16,5 +21,13 @@
         &:not(:first-child) {
             margin-left: calc(var(--personeImageSize) / 4 * -1);
         }
+
+        @include laptop {
+            border-width: rem(1);
+        }
+    }
+
+    @include tablet {
+        --personeImageSize: #{rem(40)};
     }
 }

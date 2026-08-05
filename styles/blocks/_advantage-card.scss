@@ -4,6 +4,14 @@
     display: grid;
     row-gap: rem(30);
 
+    @include laptop {
+        row-gap: rem(20);
+    }
+
+    @include mobile {
+        row-gap: rem(13);
+    }
+
     &__link {
         --circleSize: #{rem(52)};
         --circleMarginLeft: #{rem(20)};
@@ -24,6 +32,26 @@
             background: url('../../icons/arrow-top-right_black.svg') center no-repeat;
             background-color: var(--color-accent);
             border-radius: 50%;
+        }
+
+        @include laptop {
+            --circleSize: #{rem(44)};
+            --circleMarginLeft: #{rem(14)};
+            row-gap: rem(2);
+        }
+
+        @include mobile {
+            --circleSize: #{rem(40)};
+        }
+    }
+
+    &__image {
+        @include laptop {
+            width: rem(40);
+        }
+
+        @include mobile {
+            width: rem(30);
         }
     }
 

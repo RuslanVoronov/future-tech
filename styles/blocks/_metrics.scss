@@ -21,7 +21,12 @@
         }
 
         @include laptop {
-            padding: rem(30);
+            padding: rem(30) rem(40);
+            row-gap: rem(2);
+        }
+        @include tablet {
+            row-gap: 0;
+            padding: rem(20);
         }
     }
 
