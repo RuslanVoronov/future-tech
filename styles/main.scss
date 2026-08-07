@@ -4,31 +4,42 @@
 @use 'utils';
 @use 'globals';
 
+// header
 @use 'blocks/icon.scss';
 @use 'blocks/logo.scss';
 @use 'blocks/button.scss';
 @use 'blocks/burger-button.scss';
 @use 'blocks/header.scss';
 
+// footer
 @use 'blocks/badge';
 @use 'blocks/soc1als';
 @use 'blocks/footer';
 
+// hero
 @use 'blocks/metrics';
 @use 'blocks/team';
 @use 'blocks/resources-preview';
 @use 'blocks/advantage-card';
 @use 'blocks/hero';
 
+// features
 @use 'blocks/tag';
 @use 'blocks/section';
 @use 'blocks/list';
 @use 'blocks/tile';
 @use 'blocks/card';
 
+// blog
+@use 'blocks/tabs';
+@use 'blocks/person-card';
+@use 'blocks/blog-actions';
+@use 'blocks/blog-card';
 
-// .header,
-// main>*:not(:last-child),
-// .footer {
-//     display: none !important;
-// }
+
+
+.header,
+main>*:not(:last-child),
+.footer {
+    display: none !important;
+}
