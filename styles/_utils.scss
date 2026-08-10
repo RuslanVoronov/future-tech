@@ -64,3 +64,36 @@
         }
     }
 }
+
+.circle-icon {
+    --circleSize: #{rem(52)};
+    --circleMarginLeft: #{rem(20)};
+
+    position: relative;
+    min-height: var(--circleSize);
+    padding-right: var(--circleSize) + var(--circleMarginLeft);
+
+    @include laptop {
+        --circleSize: #{rem(44)};
+        --circleMarginLeft: #{rem(14)};
+    }
+
+    @include mobile {
+        --circleSize: #{rem(40)};
+    }
+
+    &::after {
+        @include square(var(--circleSize));
+        @include abs-y;
+
+        content: '';
+        right: 0;
+        background: url('../../icons/arrow-top-right_black.svg') center no-repeat;
+        background-color: var(--color-accent);
+        border-radius: 50%;
+    }
+
+    @include laptop {
+        row-gap: rem(2);
+    }
+}

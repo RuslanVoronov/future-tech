@@ -13,36 +13,9 @@
     }
 
     &__link {
-        --circleSize: #{rem(52)};
-        --circleMarginLeft: #{rem(20)};
-
-        position: relative;
         display: flex;
         flex-direction: column;
         row-gap: rem(4);
-
-        padding-right: var(--circleSize) + var(--circleMarginLeft);
-
-        &::after {
-            @include square(var(--circleSize));
-            @include abs-y;
-
-            content: '';
-            right: 0;
-            background: url('../../icons/arrow-top-right_black.svg') center no-repeat;
-            background-color: var(--color-accent);
-            border-radius: 50%;
-        }
-
-        @include laptop {
-            --circleSize: #{rem(44)};
-            --circleMarginLeft: #{rem(14)};
-            row-gap: rem(2);
-        }
-
-        @include mobile {
-            --circleSize: #{rem(40)};
-        }
     }
 
     &__image {

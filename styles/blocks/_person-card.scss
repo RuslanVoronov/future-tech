@@ -11,9 +11,8 @@
         background-color: var(--color-dark-15);
         border-radius: 50%;
 
-
         @include laptop {
-            --imageSize: #{rem(60)}
+            --imageSize: #{rem(60)};
         }
     }
 
