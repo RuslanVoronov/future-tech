@@ -1921,6 +1921,10 @@ button[aria-label]::before {
   padding: 1.875rem;
   transition-duration: var(--transition-duration);
 }
+.video-player__panel:not(.is-active) {
+  opacity: 0;
+  visibility: hidden;
+}
 .video-player__panel::before {
   content: "";
   position: absolute;
@@ -1970,10 +1974,4 @@ button[aria-label]::before {
 .video-card__body {
   display: grid;
   row-gap: clamp(0.25rem, 0.1544117647rem + 0.3921568627vw, 0.625rem);
-}
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
 }/*# sourceMappingURL=main.css.map */

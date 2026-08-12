@@ -1,8 +1,8 @@
-const roootSelector = '[data-js-tabs]'
+const rootSelector = '[data-js-tabs]'
 
 class Tabs {
     selectors = {
-        root: roootSelector,
+        root: rootSelector,
         button: '[data-js-tabs-button]',
         content: '[data-js-tabs-content]',
     }
@@ -139,7 +139,7 @@ class TabsCollection {
     }
 
     init() {
-        document.querySelectorAll(roootSelector).forEach((element) => {
+        document.querySelectorAll(rootSelector).forEach((element) => {
             new Tabs(element)
         })
     }
