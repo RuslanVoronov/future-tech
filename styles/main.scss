@@ -4,6 +4,7 @@
 @use 'utils';
 @use 'globals';
 
+@use 'blocks/expandable-content';
 // header
 @use 'blocks/icon.scss';
 @use 'blocks/logo.scss';
@@ -53,10 +54,14 @@
 @use 'blocks/video-player';
 @use 'blocks/_video-card.scss';
 
+@use 'blocks/table-of-contents';
+@use 'blocks/blog-details';
 
 
-// .header,
-// main>*:not(:last-child),
-// .footer {
-//     display: none !important;
-// }
+
+
+.header,
+main>*:not(:last-child),
+.footer {
+    display: none !important;
+}
