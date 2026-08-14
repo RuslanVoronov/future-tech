@@ -2158,10 +2158,4 @@ button[aria-label]::before {
 .blog-details__main h5:not(:last-child),
 .blog-details__main h6:not(:last-child) {
   margin-bottom: 1em;
-}
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
 }/*# sourceMappingURL=main.css.map */
