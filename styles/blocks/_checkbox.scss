@@ -12,6 +12,7 @@
 
     @include hover {
         color: var(--color-accent);
+
         .checkbox__input {
             border-color: var(--color-accent);
         }
@@ -37,6 +38,10 @@
             &::after {
                 @include hide;
             }
+        }
+
+        &:user-invalid {
+            border-color: var(--color-red);
         }
 
         &::after {
